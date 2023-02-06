@@ -1,0 +1,12 @@
+MESSAGE "deseja eliminar o registro"
+VIEW-AS ALERT-BOX QUESTION BUTTONS YES-NO-CANCEL
+TITLE "Apaga?" UPDATE Escolha AS LOGICAL.
+
+IF Escolha = YES THEN
+DO:
+    MESSAGE "Registro apagado"
+    VIEW-AS ALERT-BOX INFORMATION BUTTON OK. 
+END. ELSE DO:
+    MESSAGE 'O registro foi mantido'
+    VIEW-AS ALERT-BOX INFORMATION BUTTON OK. 
+END.
